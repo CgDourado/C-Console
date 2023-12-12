@@ -1,0 +1,10 @@
+using static System.Console;
+
+int tempf = 0, tempc = 0;
+
+WriteLine("Qual a Temperatura? ºF: ");
+tempf = Convert.ToInt32(ReadLine());
+
+tempc = ((tempf - 32)*5)/9;
+WriteLine($"A temperatura é de {tempc}ºC");
+ReadKey();

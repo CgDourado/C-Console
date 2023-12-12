@@ -1,0 +1,29 @@
+using static System.Console;
+
+double n1 = 0, n2 = 0, n3 = 0, n4 = 0, n5 = 0, n6 = 0, n7 = 0, n8 = 0, n9 = 0, n10 = 0;
+double soma = 0;
+
+WriteLine("Escreva o Primeiro Número!");
+n1 = Convert.ToDouble(ReadLine());
+WriteLine("Escreva o Segundo Número!");
+n2 = Convert.ToDouble(ReadLine());
+WriteLine("Escreva o Terceiro Número!");
+n3 = Convert.ToDouble(ReadLine());
+WriteLine("Escreva o Quarto Número!");
+n4 = Convert.ToDouble(ReadLine());
+WriteLine("Escreva o Quinto Número!");
+n5 = Convert.ToDouble(ReadLine());
+WriteLine("Escreva o Sexto Número!");
+n6 = Convert.ToDouble(ReadLine());
+WriteLine("Escreva o Sétimo Número!");
+n7 = Convert.ToDouble(ReadLine());
+WriteLine("Escreva o Oitavo Número!");
+n8 = Convert.ToDouble(ReadLine());
+WriteLine("Escreva o Nono Número!");
+n9 = Convert.ToDouble(ReadLine());
+WriteLine("Escreva o Décimo Número!");
+n10 = Convert.ToDouble(ReadLine());
+
+soma = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10;
+WriteLine($"A soma de todos os número é = {soma}");
+ReadKey();

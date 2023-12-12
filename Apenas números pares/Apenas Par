@@ -1,0 +1,17 @@
+using static System.Console;
+
+int inicial, final, soma;
+
+WriteLine("Digite um Valor Inicial");
+inicial = Convert.ToInt32(ReadLine());
+WriteLine("Digite um Valor Final");
+final = Convert.ToInt32(ReadLine());
+
+for (int i = inicial; i <= final; i++)
+{
+    if (i % 2 == 0)
+    {
+        WriteLine($"Interpolação: {i}");
+    }
+}
+ReadLine();

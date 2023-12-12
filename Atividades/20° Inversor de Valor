@@ -1,0 +1,19 @@
+using static System.Console;
+
+int x = 0;
+int y = 0;
+int mudar = 0;
+
+WriteLine("Digite um Número para X: ");
+x = Convert.ToInt32(ReadLine());
+WriteLine("Digite um Número para Y: ");
+y = Convert.ToInt32(ReadLine());
+
+WriteLine($"Os números são x={x}, e y={y}");
+
+mudar = x;
+x = y;
+y = mudar;
+WriteLine("Invertendo...");
+WriteLine($"Agora os números são x={x}, e y={y}");
+ReadKey();

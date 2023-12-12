@@ -1,0 +1,17 @@
+using static System.Console;
+
+int a = 0, b = 0;
+
+WriteLine("Digite o Valor de A:");
+a = Convert.ToInt32(ReadLine());
+WriteLine("Digite o Valor de B:");
+b = Convert.ToInt32(ReadLine());
+if (a > b)
+{
+    WriteLine($"O Valor de A, é maior que o Valor de B");
+}
+else if (b > a)
+{
+    WriteLine($"O Valor de B, é maior que o Valor de A");
+}
+ReadKey();

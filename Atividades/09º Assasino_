@@ -1,0 +1,59 @@
+using static System.Console;
+
+int perguntas;
+perguntas = 0;
+ConsoleKeyInfo key;
+
+
+WriteLine("Telefonou para a vítima? [s/n]:");
+key = ReadKey();
+if (key.Key == ConsoleKey.S)
+{
+    perguntas++;
+}
+WriteLine();
+WriteLine("Esteve no local do crime? [s/n]:");
+key = ReadKey();
+if (key.Key == ConsoleKey.S)
+{
+    perguntas++;
+}
+WriteLine();
+WriteLine("Mora perto da vírima? [s/n]:");
+key = ReadKey();
+if (key.Key == ConsoleKey.S)
+{
+    perguntas++;
+}
+WriteLine();
+WriteLine("Devia para a vítima? [s/n]");
+key = ReadKey();
+if (key.Key == ConsoleKey.S)
+{
+    perguntas++;
+}
+WriteLine();
+WriteLine("ja trabalhou com a vítima? [s/n]");
+key = ReadKey();
+if (key.Key == ConsoleKey.S)
+{
+    perguntas++;
+}
+WriteLine();
+if (perguntas == 5)
+{
+    WriteLine("Assasino!!");
+}
+else if (perguntas == 2)
+{
+    WriteLine("Suspeito...");
+}
+else if (perguntas == 3 || perguntas == 4)
+{
+    WriteLine("Cumplice!!");
+}
+else
+{
+    WriteLine("Inocente!!");
+}
+ReadKey();

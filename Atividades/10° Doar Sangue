@@ -1,0 +1,16 @@
+using static System.Console;
+
+int idade = 0;
+
+WriteLine("Qual sua idade?: ");
+idade = Convert.ToInt32(ReadLine());
+
+if (idade < 18 || idade > 67)
+{
+    WriteLine("Você não pode Doar sangue, VAZA!");
+}
+else if(idade >= 18 || idade <= 67)
+    {
+    WriteLine("Você pode Doar sangue, Siga em frente!");
+}
+ReadKey();

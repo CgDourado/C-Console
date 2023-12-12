@@ -1,0 +1,18 @@
+using static System.Console;
+
+int mç = 0;
+double soma = 0;
+
+WriteLine("Quantas maçãs você quer?:");
+mç = Convert.ToInt32(ReadLine());
+if (mç < 12)
+{
+    soma = mç * 1.30;
+        WriteLine($"Sua compra deu R$:{soma.ToString("N2")}");
+}
+else if (mç >= 12)
+{
+    soma = mç * 1.00;
+    WriteLine($"Sua compra deu R$:{soma.ToString("N2")}");
+}
+ReadKey();

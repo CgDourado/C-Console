@@ -1,0 +1,23 @@
+using static System.Console;
+
+int num;
+
+WriteLine("Digite um Número:");
+num = Convert.ToInt32(ReadLine());
+
+for (int i = 1; i <= num; i++)
+{
+	if (i % 2 == 0)
+	{
+		WriteLine("Número Par: {0}", i);
+	}
+}
+WriteLine();
+for (int i = 1; i <= num; i++)
+{
+    if (i % 2 != 0)
+    {
+        WriteLine("Número ímpar: {0}", i);
+    }
+}
+ReadKey();

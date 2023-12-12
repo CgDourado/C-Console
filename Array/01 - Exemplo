@@ -1,0 +1,29 @@
+using static System.Console;
+
+string[] carros = {"Volvo", "Peugeot", "Nissan", "Chevrolet"};
+WriteLine(carros[2]);
+carros[0] = "Volkswagen";
+WriteLine();
+
+WriteLine("O tamanho do array é: " + carros.Length);
+WriteLine();
+Array.Sort(carros);
+foreach (string c in carros)
+{
+    WriteLine(c);
+}
+WriteLine();
+
+string novocarro;
+WriteLine("Digite uma marca de carro");
+novocarro = ReadLine();
+WriteLine();
+
+List<string> novocarros = new List<string>(carros.ToList());
+novocarros.Add(novocarro);
+carros = novocarros.ToArray();
+foreach (var item in carros)
+{
+    WriteLine(item);
+}
+ReadLine();

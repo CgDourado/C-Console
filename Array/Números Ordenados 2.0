@@ -1,0 +1,20 @@
+using static System.Console;
+
+int[] numeros = new int[5];
+
+WriteLine("Digite 5 números..");
+WriteLine("Pressione ENTER para cada numero digitado..");
+for (int n = 0; n < numeros.Length; n++)
+{
+    numeros[n] = Convert.ToInt16(ReadLine());
+}
+Clear();
+WriteLine("----------------------------------------");
+
+Array.Sort(numeros);
+foreach (int c in numeros)
+{
+    WriteLine(c);
+}
+WriteLine();
+ReadLine();

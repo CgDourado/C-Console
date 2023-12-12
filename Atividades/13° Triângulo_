@@ -1,0 +1,17 @@
+using static System.Console;
+double l1,l2,l3;
+WriteLine("Digite o Valor de L1: ");
+l1 = Convert.ToDouble(ReadLine());
+WriteLine("Digite o Valor de L2: ");
+l2 = Convert.ToDouble(ReadLine());
+WriteLine("Digite o Valor de L3: ");
+l3 = Convert.ToDouble(ReadLine());
+if (l1 < l2 + l3 && l2 < l1+l3 && l3 < l1+l2)
+{
+    WriteLine("É um Triângulo");
+}
+else
+{
+    WriteLine("Não é um Triângulo");
+}
+ReadKey();

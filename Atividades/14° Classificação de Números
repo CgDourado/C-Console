@@ -1,0 +1,23 @@
+using static System.Console;
+
+int n1 = 0;
+int n2 = 0;
+
+WriteLine("Qual o Primeiro Valor:");
+n1 = Convert.ToInt32(ReadLine());
+WriteLine("Qual o Segundo Valor:");
+n2 = Convert.ToInt32(ReadLine());
+
+if (n1 == n2)
+{
+    WriteLine("Números iguais!");
+}
+else if (n1 > n2)
+{
+    WriteLine("Primeiro é maior!");
+}
+else if (n1 < n2)
+{
+    WriteLine("Segundo Maior!");
+}
+ReadKey();
